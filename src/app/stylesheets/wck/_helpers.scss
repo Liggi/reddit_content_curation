@@ -1,0 +1,81 @@
+//---------------------------------------------------------------//
+// Helper Classes
+//---------------------------------------------------------------//
+
+
+// Floats
+// ------------------------------------------//
+
+.cf {
+  @include clearfix;
+}
+.cb {
+  clear: both;
+}
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
+
+
+// Centering Content
+// ------------------------------------------//
+
+.center-block {
+  @include center-block;
+}
+
+.center-content {
+  @include center-content;
+}
+
+.inline {
+  display: inline-block !important;
+  margin-right: 4px;
+  &.middle {
+    vertical-align: middle;
+  }
+}
+
+
+// Visibility
+// ------------------------------------------//
+
+.hidden {
+  @include hidden;
+}
+.invisible {
+  @include invisible;
+}
+.hide-text {
+  @include hide-text;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+
+// Print Visibility
+// ------------------------------------------//
+
+.visible-print {
+  @include hidden;
+  @media print {
+    @include show;
+  }
+}
+
+.hidden-print {
+  @media print {
+    @include hidden;
+  }
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!--[if IE 8]>          <html class="no-js ie8 lt-ie10 lt-ie9"> <![endif]-->
+<!--[if IE 9]>          <html class="no-js ie9 lt-ie10"> <![endif]-->
+<!--[if gt IE 9]><!-->  <html class="no-js"> <!--<![endif]-->
+  <head>
+    <!-- Site Info -->
+    <title>{{= it.document.title }}</title>
+    <meta name="description" content="{{= it.document.description }}">
+    <meta name="keywords" content="{{= it.document.keywords }}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="app/stylesheets/application.css" />
+  </head>
+
+  <body class="{{= it.document.body_class }}">
+
+    {{= it.include("header") }}
+    {{= it.document }}
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="app/javascripts/app.libraries.js"></script>
+    <script src="app/javascripts/app.vendor.js"></script>
+    <script src="app/javascripts/templates.js"></script>
+    <script src="app/javascripts/app.modules.js"></script>
+    <script src="app/javascripts/application.js"></script>
+  </body>
+</html>

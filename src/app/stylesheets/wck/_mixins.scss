@@ -1,0 +1,33 @@
+//---------------------------------------------------------------//
+// Custom Mixins
+//---------------------------------------------------------------//
+
+@mixin center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin center-content {
+  text-align: center;
+}
+
+@mixin show($mode: block) {
+  display: $mode !important;
+  visibility: visible !important;
+}
+
+@mixin hidden {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+@mixin invisible {
+  visibility: hidden;
+}
+
+@mixin sprite($position, $file: 'sprite.svg', $path: 'interface') {
+  background-image: url('../images/#{$path}/#{$file}');
+  background-position: $position;
+  background-repeat: no-repeat;
+}
